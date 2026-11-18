@@ -1,0 +1,239 @@
+// !$*UTF8*$!
+{
+"archiveVersion" = 1;
+"classes" = {
+
+};
+"objectVersion" = 56;
+"objects" = {
+"F13EA3996DD5DB6E942E0A1A" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "SuixinYueApp.swift";
+"sourceTree" = "<group>";
+};
+"F1418D719B43235CC2D36ABE" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "F13EA3996DD5DB6E942E0A1A";
+};
+"9727B9EED8ACD2EE46E136A0" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "ContentView.swift";
+"sourceTree" = "<group>";
+};
+"FF789A679780598F4771B71C" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "9727B9EED8ACD2EE46E136A0";
+};
+"3685E330EC5277A9DD5661C6" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "folder.assetcatalog";
+"path" = "Assets.xcassets";
+"sourceTree" = "<group>";
+};
+"0FB3972E51944AFE55C0F678" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "3685E330EC5277A9DD5661C6";
+};
+"38A007151ABE87CC01A5B6E9" = {
+"isa" = "PBXFileReference";
+"explicitFileType" = "wrapper.application";
+"path" = "SuixinYueIOS.app";
+"sourceTree" = "BUILT_PRODUCTS_DIR";
+"includeInIndex" = 0;
+};
+"FBDC4F23F93125BBEEAE800C" = {
+"isa" = "PBXGroup";
+"children" = (
+"38A007151ABE87CC01A5B6E9",
+);
+"name" = "Products";
+"sourceTree" = "<group>";
+};
+"7FEFA489E25E19BEF8A8A2A9" = {
+"isa" = "PBXGroup";
+"children" = (
+"F13EA3996DD5DB6E942E0A1A",
+"9727B9EED8ACD2EE46E136A0",
+"3685E330EC5277A9DD5661C6",
+"FBDC4F23F93125BBEEAE800C",
+);
+"sourceTree" = "<group>";
+};
+"BCE16DD0260827ECF338C787" = {
+"isa" = "PBXSourcesBuildPhase";
+"buildActionMask" = 2147483647;
+"files" = (
+"F1418D719B43235CC2D36ABE",
+"FF789A679780598F4771B71C",
+);
+"runOnlyForDeploymentPostprocessing" = 0;
+};
+"7561BFB015D8F536760CB671" = {
+"isa" = "PBXFrameworksBuildPhase";
+"buildActionMask" = 2147483647;
+"files" = (
+);
+"runOnlyForDeploymentPostprocessing" = 0;
+};
+"0189424A5A60FED329FA868E" = {
+"isa" = "PBXResourcesBuildPhase";
+"buildActionMask" = 2147483647;
+"files" = (
+"0FB3972E51944AFE55C0F678",
+);
+"runOnlyForDeploymentPostprocessing" = 0;
+};
+"CACD8F8D7E01D03300A42FA5" = {
+"isa" = "XCBuildConfiguration";
+"buildSettings" = {
+"CLANG_ENABLE_MODULES" = "YES";
+"CLANG_ENABLE_OBJC_ARC" = "YES";
+"SDKROOT" = "iphoneos";
+"IPHONEOS_DEPLOYMENT_TARGET" = "16.4";
+"SWIFT_VERSION" = "5.0";
+"DEBUG_INFORMATION_FORMAT" = "dwarf";
+};
+"name" = "Debug";
+};
+"1BA2A0D92BE8C4CB7BC99606" = {
+"isa" = "XCBuildConfiguration";
+"buildSettings" = {
+"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+"CODE_SIGN_STYLE" = "Automatic";
+"CURRENT_PROJECT_VERSION" = "1";
+"GENERATE_INFOPLIST_FILE" = "YES";
+"INFOPLIST_KEY_CFBundleDisplayName" = "体育场馆预订系统";
+"INFOPLIST_KEY_ITSAppUsesNonExemptEncryption" = "NO";
+"INFOPLIST_KEY_LSApplicationCategoryType" = "public.app-category.sports";
+"INFOPLIST_KEY_UIApplicationSceneManifest_Generation" = "YES";
+"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+"INFOPLIST_KEY_UIUserInterfaceStyle" = "Light";
+"INFOPLIST_KEY_UISupportedInterfaceOrientations" = "UIInterfaceOrientationPortrait";
+"MARKETING_VERSION" = "1.0";
+"PRODUCT_BUNDLE_IDENTIFIER" = "com.suixinyue.sports";
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+"SWIFT_EMIT_LOC_STRINGS" = "YES";
+"TARGETED_DEVICE_FAMILY" = "1";
+"LD_RUNPATH_SEARCH_PATHS" = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+"ONLY_ACTIVE_ARCH" = "YES";
+};
+"name" = "Debug";
+};
+"B2C3C6A624C4C8479FDD1FBF" = {
+"isa" = "XCBuildConfiguration";
+"buildSettings" = {
+"CLANG_ENABLE_MODULES" = "YES";
+"CLANG_ENABLE_OBJC_ARC" = "YES";
+"SDKROOT" = "iphoneos";
+"IPHONEOS_DEPLOYMENT_TARGET" = "16.4";
+"SWIFT_VERSION" = "5.0";
+"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+};
+"name" = "Release";
+};
+"60BA48D99B3C23F8993C3458" = {
+"isa" = "XCBuildConfiguration";
+"buildSettings" = {
+"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+"CODE_SIGN_STYLE" = "Automatic";
+"CURRENT_PROJECT_VERSION" = "1";
+"GENERATE_INFOPLIST_FILE" = "YES";
+"INFOPLIST_KEY_CFBundleDisplayName" = "体育场馆预订系统";
+"INFOPLIST_KEY_ITSAppUsesNonExemptEncryption" = "NO";
+"INFOPLIST_KEY_LSApplicationCategoryType" = "public.app-category.sports";
+"INFOPLIST_KEY_UIApplicationSceneManifest_Generation" = "YES";
+"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+"INFOPLIST_KEY_UIUserInterfaceStyle" = "Light";
+"INFOPLIST_KEY_UISupportedInterfaceOrientations" = "UIInterfaceOrientationPortrait";
+"MARKETING_VERSION" = "1.0";
+"PRODUCT_BUNDLE_IDENTIFIER" = "com.suixinyue.sports";
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+"SWIFT_EMIT_LOC_STRINGS" = "YES";
+"TARGETED_DEVICE_FAMILY" = "1";
+"LD_RUNPATH_SEARCH_PATHS" = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+"SWIFT_COMPILATION_MODE" = "wholemodule";
+"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+"VALIDATE_PRODUCT" = "YES";
+};
+"name" = "Release";
+};
+"FA52021448A4AC7DE6CD200E" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = (
+"CACD8F8D7E01D03300A42FA5",
+"B2C3C6A624C4C8479FDD1FBF",
+);
+"defaultConfigurationIsVisible" = 0;
+"defaultConfigurationName" = "Release";
+};
+"20BA35986C8D108192A74E6F" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = (
+"1BA2A0D92BE8C4CB7BC99606",
+"60BA48D99B3C23F8993C3458",
+);
+"defaultConfigurationIsVisible" = 0;
+"defaultConfigurationName" = "Release";
+};
+"0E8A3AD980EC179856012B7E" = {
+"isa" = "PBXNativeTarget";
+"buildConfigurationList" = "20BA35986C8D108192A74E6F";
+"buildPhases" = (
+"BCE16DD0260827ECF338C787",
+"7561BFB015D8F536760CB671",
+"0189424A5A60FED329FA868E",
+);
+"buildRules" = (
+);
+"dependencies" = (
+);
+"name" = "SuixinYueIOS";
+"productName" = "SuixinYueIOS";
+"productReference" = "38A007151ABE87CC01A5B6E9";
+"productType" = "com.apple.product-type.application";
+};
+"98F54143AB4E86B28C3AFEE0" = {
+"isa" = "PBXProject";
+"attributes" = {
+"BuildIndependentTargetsInParallel" = "YES";
+"LastUpgradeCheck" = "1600";
+"TargetAttributes" = {
+"0E8A3AD980EC179856012B7E" = {
+"CreatedOnToolsVersion" = "16.0";
+};
+};
+};
+"buildConfigurationList" = "FA52021448A4AC7DE6CD200E";
+"compatibilityVersion" = "Xcode 14.0";
+"developmentRegion" = "zh-Hans";
+"hasScannedForEncodings" = 0;
+"knownRegions" = (
+"zh-Hans",
+"en",
+"Base",
+);
+"mainGroup" = "7FEFA489E25E19BEF8A8A2A9";
+"productRefGroup" = "FBDC4F23F93125BBEEAE800C";
+"projectDirPath" = "";
+"projectRoot" = "";
+"targets" = (
+"0E8A3AD980EC179856012B7E",
+);
+};
+};
+"rootObject" = "98F54143AB4E86B28C3AFEE0";
+}

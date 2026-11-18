@@ -1,0 +1,17 @@
+# Local build and signing material
+build/
+local.properties
+.DS_Store
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcarchive/
+*.ipa
+*.p12
+*.p8
+*.key
+*.mobileprovision
+*.cer
+*.certSigningRequest
+signing-private/
+__pycache__/

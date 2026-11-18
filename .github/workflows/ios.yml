@@ -1,0 +1,40 @@
+name: iOS cloud build
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show Xcode version
+        run: xcodebuild -version
+      - name: Check project and compile for iPhone
+        run: |
+          xcodebuild -list -project ios/SuixinYueIOS/SuixinYueIOS.xcodeproj
+          xcodebuild -project ios/SuixinYueIOS/SuixinYueIOS.xcodeproj \
+            -scheme SuixinYueIOS -configuration Release \
+            -destination 'generic/platform=iOS' -derivedDataPath build/ios-check \
+            CODE_SIGNING_ALLOWED=NO build
+      - name: Package unsigned IPA for local signing
+        run: |
+          set -euo pipefail
+          APP=build/ios-check/Build/Products/Release-iphoneos/SuixinYueIOS.app
+          test -f "$APP/Info.plist"
+          EXECUTABLE=$(/usr/libexec/PlistBuddy -c 'Print CFBundleExecutable' "$APP/Info.plist")
+          /usr/bin/lipo -verify_arch arm64 "$APP/$EXECUTABLE"
+          mkdir -p build/ios-sideload/Payload
+          ditto "$APP" build/ios-sideload/Payload/SuixinYueIOS.app
+          cd build/ios-sideload
+          ditto -c -k --keepParent Payload ../SuixinYue-unsigned.ipa
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SuixinYue-IPA-requires-local-signing
+          path: build/SuixinYue-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 7
