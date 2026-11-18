@@ -7,7 +7,7 @@
 - 当前环境是 Windows，不能直接编译 iOS App 或生成 IPA。
 - 已补充完整 `SuixinYueIOS.xcodeproj`、共享 Scheme 和应用图标，可直接在 Xcode 打开。最低 iOS 16.4，面向 iPhone。
 - 已准备 GitHub 云端编译，输出供 Windows 本地签名安装的 unsigned IPA，参见 [INSTALL_IPA.md](../INSTALL_IPA.md)。不上架，无需付费 Apple 开发者会员。仓库根目录需包含 `.github/workflows/ios.yml`。
-- 当前只完成 Windows 上的配置检查；尚未在 Xcode 编译、真机测试或生成可安装 IPA。
+- 2026-11-18 已通过 GitHub 云端 Xcode 编译，生成供本地签名安装的 unsigned IPA，并验证 arm64 真机架构及包结构；尚未完成 iPhone 安装和交互测试。
 - 当前数据只保存在本地，没有连接学校预约服务；界面文案不代表后台已完成预约。
 
 ## 已实现功能

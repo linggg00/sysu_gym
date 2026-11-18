@@ -9,7 +9,7 @@
 3. 等待编译成功，下载 Artifacts 中的 **SuixinYue-IPA-requires-local-signing**。
 4. 解压下载的产物，得到 **SuixinYue-unsigned.ipa**。这是 iPhone arm64 真机程序，需要在安装时使用自己的账号签名。
 
-目前未在云端执行实际编译；工程包不是 IPA，不能直接安装。首次构建失败时，保留日志中的第一个 Xcode 错误用于修复。
+2026-11-18 已通过 GitHub 云端 Xcode 编译和 IPA 打包，并验证产物结构、校验和及 arm64 真机架构。[成功构建记录](https://github.com/linggg00/sysu_gym/actions/runs/44229656605)。尚未在 iPhone 上完成签名安装和交互测试。
 
 ## Windows 安装到 iPhone
 
