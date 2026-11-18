@@ -27,7 +27,7 @@ jobs:
           APP=build/ios-check/Build/Products/Release-iphoneos/SuixinYueIOS.app
           test -f "$APP/Info.plist"
           EXECUTABLE=$(/usr/libexec/PlistBuddy -c 'Print CFBundleExecutable' "$APP/Info.plist")
-          /usr/bin/lipo -verify_arch arm64 "$APP/$EXECUTABLE"
+          /usr/bin/lipo "$APP/$EXECUTABLE" -verify_arch arm64
           mkdir -p build/ios-sideload/Payload
           ditto "$APP" build/ios-sideload/Payload/SuixinYueIOS.app
           cd build/ios-sideload
